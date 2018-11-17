@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My first Ruby CLI gem: Podcasts!"
-date:       2018-11-17 08:08:06 +0000
+date:       2018-11-17 03:08:07 -0500
 permalink:  my_first_ruby_cli_gem_podcasts
 ---
 
