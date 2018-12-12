@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "OO Ruby Review"
-date:       2018-12-03 18:34:23 +0000
+date:       2018-12-03 13:34:23 -0500
 permalink:  oo_ruby_review
 ---
 
@@ -17,7 +17,7 @@ In this post, I review scopes of class as well as instance and local methods and
 
 ### Class Scope
 
-But what do we mean by “available”? Availability of methods and variables (and constants) in Ruby is understood by scope. In other words, scope determines which methods and variables are available at a given time. Let’s discuss the above reference points in more detail. 
+You may ask, what do we mean by “available”? Availability of methods and variables (and constants) in Ruby is understood by scope. In other words, scope determines which methods and variables are available at a given time. Let’s discuss the above reference points in more detail. 
 
 ### Class & Instance Methods
 
@@ -29,13 +29,13 @@ We call the methods defined within the object's class** instance methods** becau
 
 For example, by defining #swim within a Student class, swim becomes a method of all instances of Student. If we instantiate more Students, they can all swim. Remember, an object can do anything, but it has to be taught how to do it.
 
-A **class method** is a method that is called on the class itself (using the **self** keyword), not on the instances of that class. **Self** is a special keyword that points to the object that "owns" the currently instance of an object and can be used inside of a class and/or instance method. In an instance method, self points to the object whereas within a class method, the class itself owns the method.
+A **class method** is a method that is called on the class itself (using the **self** keyword), not on the instances of that class. **Self** is a special keyword that points to the object that "owns" the current instance of an object and can be used inside of a class and/or instance method. In an instance method, self points to the object whereas within a class method, the class itself owns the method.
 
 ### Local vs. Instance vs. Class Variables
 
 A  **local variable** that is defined inside one method, for example, cannot be accessed by another method. In order to make variables available outside of a particular method, we can use **instance variables** inside our classes.
 
-An** instance variable** is a variable that is accessible in any instance method in a particular instance of a class. 
+An** instance variable** is a variable that is accessible in any instance method of a particular instance of a class. 
 
 A **class variable** is accessible to the entire class––it has *class scope*. 
 
