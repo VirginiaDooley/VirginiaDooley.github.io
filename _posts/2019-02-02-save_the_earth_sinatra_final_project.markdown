@@ -14,8 +14,8 @@ Here is what I learned in the process:
 
 In addition to validating access to certain ```get``` requests, I had always wondered how nav bars display different content once logged in. It turns out it's super simple once you have those helpers defined:
 
-``` <% if logged_in? %>```
-```#if a user is logged in, they will see these options:
+``` <% if logged_in? %>
+#if a user is logged in, they will see these options:
 
            <a class="btn btn-primary" href="/">Home</a>
 						
@@ -25,18 +25,18 @@ In addition to validating access to certain ```get``` requests, I had always won
 								
             <a class="btn btn-primary" href="/actions/show">View my Actions</a>
 								
-             <a class="btn btn-primary" href="/logout">Log Out</a>```
+             <a class="btn btn-primary" href="/logout">Log Out</a>
 
-```<% else %>```
-```#otherwise, they will see these options:```
+<% else %>
+#otherwise, they will see these options:
 							
-            ```<a class="btn btn-primary" href="/users/login">Log In</a>```
+            <a class="btn btn-primary" href="/users/login">Log In</a>
 								
-            ```<a class="btn btn-primary" href="/users/signup">Sign Up</a>```
+            <a class="btn btn-primary" href="/users/signup">Sign Up</a>
 								
-            ```<a class="btn btn-primary" href="/ideas">Eco-Ideas</a>```
+            <a class="btn btn-primary" href="/ideas">Eco-Ideas</a>
 								
-```<% end %>```
+<% end %>```
 							
 
 2. I love learning about new gems. For this project, I used some gems that helped save loads of time, protect against bad data and improve the user experience.
