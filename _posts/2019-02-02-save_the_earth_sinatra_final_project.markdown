@@ -14,15 +14,20 @@ Here is what I learned in the process:
 
 In addition to validating access to certain ```get``` requests, I had always wondered how nav bars display different content once logged in. It turns out it's super simple once you have those helpers defined:
 
-``` <% if logged_in? %>
+```<% if logged_in? %>
+
 #if a user is logged in, they will see these options:
+
 <a class="btn btn-primary" href="/">Home</a>					
 <a class="btn btn-primary" href="/ideas">Eco-Ideas</a>							
 <a class="btn btn-primary" href="/actions/new">Create an Action</a>							
 <a class="btn btn-primary" href="/actions/show">View my Actions</a>							
 <a class="btn btn-primary" href="/logout">Log Out</a>
+
 <% else %>
+
 #otherwise, they will see these options:
+
 <a class="btn btn-primary" href="/users/login">Log In</a>
 <a class="btn btn-primary" href="/users/signup">Sign Up</a>
 <a class="btn btn-primary" href="/ideas">Eco-Ideas</a>
