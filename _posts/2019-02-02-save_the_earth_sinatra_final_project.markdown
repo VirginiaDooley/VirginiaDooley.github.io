@@ -43,7 +43,8 @@ In addition to validating access to certain ```get``` requests, I had always won
 
 3. Planning your routes in the beginning will really help you gain a better understanding of how your app functions and how your code interacts. Doing so, will only prepare you better for your technical review.
 
-All in all, I really enjoyed this project and look forward to user testing with my kids! 
+All in all, I really enjoyed this project and look forward to user testing with my kids! Check it out and feel free to contribute. 
+[Save Earth!](https://github.com/VirginiaDooley/sinatra-save-earth-app)
 
 
 
