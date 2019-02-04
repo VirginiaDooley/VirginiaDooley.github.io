@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Review of key concepts and terms in Sinatra"
-date:       2019-02-04 13:32:56 +0000
+date:       2019-02-04 08:32:57 -0500
 permalink:  review_of_key_concepts_and_terms_in_sinatra
 ---
 
 
-A major drawback of an online course is that I spend most of my learning time alone and not actually discussing concepts out loud. To prepare for the technical review of my Sinatra project and moving onto Rails, I went back to our labs to confirm my understanding of the key concepts related to Sinatra. 
+Despite labs, meetups and pair programming, a major drawback of an online coding course is that I spend most of my learning time alone and not actually discussing concepts out loud. To prepare for the technical review of my Sinatra project and moving onto Rails, I went back to my Sinatra labs to confirm my understanding of the key concepts related to Sinatra. 
 
 **Which gems are essential in a Sinatra app and what do they do?**
 * [ActiveRecord](https://rubygems.org/gems/activerecord/versions/5.0.0.1) gives us access to the magical database mapping and association powers.
