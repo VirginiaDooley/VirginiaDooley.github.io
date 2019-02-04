@@ -1,0 +1,56 @@
+---
+layout: post
+title:      "Review of key concepts and terms in Sinatra"
+date:       2019-02-04 13:32:56 +0000
+permalink:  review_of_key_concepts_and_terms_in_sinatra
+---
+
+
+A major drawback of an online course is that I spend most of my learning time alone and not actually discussing concepts out loud. To prepare for the technical review of my Sinatra project and moving onto Rails, I went back to our labs to confirm my understanding of the key concepts related to Sinatra. 
+
+**Which gems are essential in a Sinatra app and what do they do?**
+* [ActiveRecord](https://rubygems.org/gems/activerecord/versions/5.0.0.1) gives us access to the magical database mapping and association powers.
+* [Rake](https://github.com/ruby/rake), short for "ruby make", is a package that lets us quickly create files and folders, and automate tasks such as database creation, 
+* [Sinatra-activerecord](https://github.com/janko/sinatra-activerecord) gives us access to some awesome Rake tasks. In other words, this gem extends Sinatra with ActiveRecord helper methods and Rake tasks.
+
+**What is the purpose of the config.ru and what is included in the file?**
+The purpose of config.ru is to detail to Rack (a gem for Ruby that will help us create a web server at its simplest) the environment requirements of the application and start the application. When you start your server with ```shotgun```, config.ru is the first file that is checked. In that file, the Sinatra library is called, our app files are  required and the application is run. 
+
+```require 'sinatra'
+ 
+require_relative './app.rb'
+ 
+run Application```
+
+**What is middleware?**
+Middleware is software that acts as a bridge between an operating system or database and applications, especially on a network. For the purposes of this project, we are use Rack::MethodOverride to enable the ability to add PATCH, PUT, DELETE routes in our controllers. 
+
+**What is the 'schema'?**
+"The term "schema" refers to the organization of data as a blueprint of how the database is constructed (divided into database tables in the case of relational databases).
+
+**What are 'routes' and how do they work?**
+Routes are the part of an application that connect HTTP requests to a specific method in your application code built to handle responding to such a request (that part of code is called a Controller Action).
+
+In other words, when a request is made to https://learn.co/blog, the router matches the request to the route and the matching controller action renders the HTML response (aka 'the view' or the V in MVC)
+
+**What Is A RESTful Route?**
+The client/server relationship is a prerequisite of a set of principles known as REST( representational state transfer). When something follows this principle, it's known as 'RESTful". 
+
+A RESTful route provides a mapping between HTTP verbs (POST, GET, PUT, PATCH, DELETE), controller actions, and (implicitly) CRUD (Create, Read, Update/Replace, Update/Modify, Delete) operations in a database. A single entry in the routing file creates seven different routes in your application. Review the map [here](https://www.restapitutorial.com/lessons/httpmethods.html).
+
+**What are DOM views?**
+The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents (among others). It defines the logical structure of documents and the way a document is accessed and manipulated.
+
+**What is a session and what happens when a session begins/ends?**
+To understand session, we have to also understand cookies. Cookies are often used in sessions creation. Cookies are small bits of data which hold data in a key=value pairs. When a user visits a webpage, cookies are stored in a hash and that's when the session begins. The session ends when the user logs out (aka destroying a session) or the page times out. 
+
+**What is the flow of the MVC?**
+MVC stands for Model — View — Controller. It's a paradigm. It allows a coder to separate the logic of the application and more easily update each part. And likewise, MVC allows a user on the client side to create and update objects in the database. 
+
+If you're a visual learner like me, this may be better understood visually: 
+
+![](https://i.imgur.com/4o3Qtrv.png)
+
+Feel free to comment with additional concepts you feel are essential to my review!
+
+
