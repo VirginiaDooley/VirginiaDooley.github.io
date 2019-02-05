@@ -10,7 +10,7 @@ Since my final Sinatra project was introduced in January - aka the month of bett
 
 Here is what I learned in the process: 
 
-1. Helpers are your friends! Between my ```logged_in?``` and ```current_user``` helpers, I was able to refactor a significant amount of code. 
+1. Helpers are your friends!  A helper contains methods that are essential for the simplification and the dryness of your views. Between my ```logged_in?``` and ```current_user``` helpers in my controller, I was able to refactor a significant amount of code. 
 
 In addition to validating access to certain ```get``` requests, I had always wondered how nav bars display different content once logged in. It turns out it's super simple once you have those helpers defined:
 
