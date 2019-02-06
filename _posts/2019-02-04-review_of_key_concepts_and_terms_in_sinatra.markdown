@@ -6,24 +6,24 @@ permalink:  review_of_key_concepts_and_terms_in_sinatra
 ---
 
 
-Despite labs, meetups and pair programming, a major drawback of an online coding course is that I spend most of my learning time alone and not actually discussing concepts out loud. To prepare for the technical review of my Sinatra project and moving onto Rails, I went back to my Sinatra labs to confirm my understanding of the key concepts related to Sinatra. 
+Despite labs, meetups and pair programming, a major drawback of an online coding course is that I spend most of my learning time alone and not actually discussing concepts out loud. To prepare for the technical review of my Sinatra project and moving onto Rails, I went back to my labs to confirm my understanding of the key concepts related to Sinatra. 
 
 **Which gems are essential in a Sinatra app and what do they do?**
-* [ActiveRecord](https://rubygems.org/gems/activerecord/versions/5.0.0.1) gives us access to the magical database mapping and association powers.
+* [ActiveRecord](https://rubygems.org/gems/activerecord/versions/5.0.0.1) gives us access to magical database mapping and association powers.
 * [Rake](https://github.com/ruby/rake), short for "ruby make", is a package that lets us quickly create files and folders, and automate tasks such as database creation, 
 * [Sinatra-activerecord](https://github.com/janko/sinatra-activerecord) gives us access to some awesome Rake tasks. In other words, this gem extends Sinatra with ActiveRecord helper methods and Rake tasks.
 
 **What is the purpose of the config.ru and what is included in the file?**
 The purpose of config.ru is to detail to Rack (a gem for Ruby that will help us create a web server at its simplest) the environment requirements of the application and start the application. When you start your server with ```shotgun```, config.ru is the first file that is checked. In that file, the Sinatra library is called, our app files are  required and the application is run. 
 
-```require 'sinatra'
+```require 'sinatra'```
  
-require_relative './app.rb'
+```require_relative './app.rb'```
  
-run Application```
+```run Application```
 
 **What is middleware?**
-Middleware is software that acts as a bridge between an operating system or database and applications, especially on a network. For the purposes of this project, we are use Rack::MethodOverride to enable the ability to add PATCH, PUT, DELETE routes in our controllers. 
+Middleware is software that acts as a bridge between an operating system or database and applications, especially on a network. For the purposes of this project, I used Rack::MethodOverride to enable the ability to add PATCH, PUT, DELETE routes in my controllers. 
 
 **What is the 'schema'?**
 "The term "schema" refers to the organization of data as a blueprint of how the database is constructed (divided into database tables in the case of relational databases).
