@@ -16,11 +16,11 @@ Despite labs, meetups and pair programming, a major drawback of an online coding
 **What is the purpose of the config.ru and what is included in the file?**
 The purpose of config.ru is to detail to Rack (a gem for Ruby that will help us create a web server at its simplest) the environment requirements of the application and start the application. When you start your server with ```shotgun```, config.ru is the first file that is checked. In that file, the Sinatra library is called, our app files are  required and the application is run. 
 
-```require 'sinatra'```
- 
-```require_relative './app.rb'```
- 
-```run Application```
+``` require 'sinatra' ```
+
+``` require_relative ‘./app.rb’ ```
+
+``` run Application ```
 
 **What is middleware?**
 Middleware is software that acts as a bridge between an operating system or database and applications, especially on a network. For the purposes of this project, I used Rack::MethodOverride to enable the ability to add PATCH, PUT, DELETE routes in my controllers. 
