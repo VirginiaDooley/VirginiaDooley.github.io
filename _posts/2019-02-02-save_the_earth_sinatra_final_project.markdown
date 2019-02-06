@@ -6,7 +6,7 @@ permalink:  save_the_earth_sinatra_final_project
 ---
 
 
-Since my final Sinatra project was introduced in January - aka the month of better intentions - I thought it was appropriate to build an app that would help me achieve my 2019 resolutions. I'm also trying to teach my kids about my coding journey so building an eco-action do list seemed like a good way to address both goals. 
+Since my final Sinatra project was introduced in January - aka the month of better intentions - I thought it was appropriate to build an app that would help me achieve my 2019 resolutions. I'm also trying to involve my kids in my coding journey so building an eco-action do list seemed like a good way to address both goals. 
 
 Here is what I learned in the process: 
 
@@ -41,7 +41,7 @@ In addition to validating access to certain ```get``` requests, I had always won
 * [Rack Flash](https://rubygems.org/gems/rack-flash3/versions/1.0.5) **eliminated the need for a failure view** and instead let the user know when their input was successful or not. 
 * My pair programmer partner for this week told me she used [validations built into ActiveRecord](https://guides.rubyonrails.org/v2.3.11/activerecord_validations_callbacks.html) which I definitely want to try out next time.
 
-3. Planning your routes in the beginning will really help you gain a better understanding of how your app functions and how your code interacts. Doing so, will only prepare you better for your technical review.
+3. Planning your routes in advance will really help you gain a better understanding of how your app functions and how your code needs to interact between MVC. Doing so, will only prepare you better for your technical review.
 
 All in all, I really enjoyed this project and look forward to user testing with my kids! Check it out and feel free to contribute. 
 [Save Earth!](https://github.com/VirginiaDooley/sinatra-save-earth-app)
