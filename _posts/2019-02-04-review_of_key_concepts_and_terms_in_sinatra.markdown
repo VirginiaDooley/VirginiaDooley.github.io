@@ -42,7 +42,32 @@ A RESTful route provides a mapping between HTTP verbs (POST, GET, PUT, PATCH, DE
 The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents (among others). It defines the logical structure of documents and the way a document is accessed and manipulated.
 
 **What is a session and what happens when a session begins/ends?**
-To understand session, we have to also understand cookies. Cookies are often used in sessions creation. Cookies are small bits of data which hold data in a key=value pairs. When a user visits a webpage, cookies are stored in a hash and that's when the session begins. The session ends when the user logs out (aka destroying a session) or the page times out. 
+*Who:* 
+You (the user), your browser and your app server. All these actors interact using sessions and cookies to move a stateless HTTP exchange to persist a simple state. 
+
+*What: *
+A session (aka transient or session cookie) is an object hash that stores data describing a client's interactions with a website at a given point in time. It stores key => value pairs of things like URL, date, time of use, username, email, etc as requested by the server.
+
+A (persistent) cookie is a hash that gets stored in the browser and sent back to the server along with every subsequent request.
+
+ Cookies are the client-side counterpart to sessions.
+
+*When:*
+When a user visits a webpage, (persistent) cookies are stored.
+When the user logs into the site, the session begins.
+
+At this point, cookies and sessions start working together:
+
+"The web application on the server reads the cookie, associates it with an existing session (if such a session exists), and decides how to respond. For example, if there is no cookie received, the application might show the login page. If a cookie is received that doesn't match the data stored in the server-side session hash, the app might show the login page with the username filled out –– having retrieved that data from the cookie –– but request that the user reauthenticate. If a cookie is received that does match the data in the server-side session hash, the app would respond with that user's data."
+
+*Where:*
+Sessions are stored in the app server until the user logs out of the app or the session times out. 
+Cookies are stored in the browser until they are cleared or deleted. 
+
+*Why:*
+Improved user experience!
+Cookies make it easier for a user to visit, leave and return to websites without having to login repeatedly. Sessions simply allow you to navigate through a site without repeatedly having to authenticate yourself on every new page you visit **within** the web application domain - which would be SUPER annoying. 
+
 
 **What is the flow of the MVC?**
 MVC stands for Model — View — Controller. It's a paradigm. It allows a coder to separate the logic of the application and more easily update each part. And likewise, MVC allows a user on the client side to create and update objects in the database. 
