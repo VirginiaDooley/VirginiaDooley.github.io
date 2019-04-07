@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Tech for Good: Rails Final Project"
-date:       2019-04-07 09:24:05 +0000
+date:       2019-04-07 05:24:05 -0400
 permalink:  tech_for_good_rails_final_project
 ---
 
 
 When a [local community organisation](https://novanew.org.uk/) decided it was time to go 100% digital, I used my rails final project as an opportunity to explore how I might help. I’ve used Salesforce and other CRMs in the past and had always hoped to learn how to build my own one day. Past experience with CRMs gave me some idea on how I wanted to map out my models and associations, but I did run into trouble along the way that I will detail here in hopes of saving others some time going forward. 
 
-**Hiccup 1 **
+**Hiccup 1**
 
 I first ran into trouble when my controllers weren’t referencing the corresponding ids for their nested routes. If you're not calling the right :id in your controllers, your routes will quickly get tangled in your console and in your mind!
 
@@ -39,7 +39,7 @@ def show
 
 **The :id in your controller must match the one in the nested route**, specifically the one that is being nested. Otherwise, you will be using a foreign key, such as :organisation_id as shown in the example above. 
 
-**Hiccup 2 **
+**Hiccup 2**
 
 Despite the fact that the ```has_and_belongs_to_many association```, this project required that I include the ability to add a writable attribute. 
 
