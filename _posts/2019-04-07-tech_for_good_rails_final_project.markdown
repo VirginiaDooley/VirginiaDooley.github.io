@@ -41,7 +41,7 @@ def show
 
 **Hiccup 2**
 
-Despite the fact that the ```has_and_belongs_to_many association```, this project required that I include the ability to add a writable attribute. 
+Despite the fact that the ```has_and_belongs_to_many```  association worked best for my use case, this project required that I include the ability to add a writable attribute. However, ```has_and_belongs_to_many``` associations don't work with writable attributes: 
 
 > 4.4.1.1 Additional Column Methods
 > 
