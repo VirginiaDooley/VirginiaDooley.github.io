@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Tech for Good: Rails Final Project"
-date:       2019-04-11 14:55:29 +0000
+date:       2019-04-11 10:55:30 -0400
 permalink:  tech_for_good_rails_final_project
 ---
 
@@ -41,7 +41,7 @@ def show
 
 **Hiccup 2 **
 
-Despite the fact that the ```has_and_belongs_to_many association```, this project required that I include the ability to add a writable attribute. 
+Despite the fact that the ```has_and_belongs_to_many``` association was a better fit for my use case, this project required that I include the ability to add a writable attribute. 
 
 > 4.4.1.1 Additional Column Methods
 > 
@@ -59,7 +59,7 @@ In theory, scope methods are simple to understand. However, I found rendering da
 
 [Custom scopes in model files in a Rails application](https://www.youtube.com/watch?v=OHS4OXPMRfc)
 		
-Although my project is complete, I look forward to developing this further over the coming weeks with the hopes of Nova CRM becoming a useful open source and completely customisable tool for the non-profit community. Please check it out, comments and contributions welcome! https://github.com/VirginiaDooley/nova-new
+look forward to developing this further over the coming weeks with the hopes of Nova CRM becoming a useful open source and completely customisable tool for the non-profit community. Please check it out, comments and contributions welcome! https://github.com/VirginiaDooley/nova-new
 
 
 
