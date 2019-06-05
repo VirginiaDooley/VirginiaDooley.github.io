@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Moving from Ruby on Rails to Javascript"
-date:       2019-06-05 15:45:59 +0000
+date:       2019-06-05 11:46:02 -0400
 permalink:  moving_from_ruby_on_rails_to_javascript
 ---
 
@@ -18,7 +18,7 @@ It wasn't until I completed my JS Final Project that I finally understood the ho
 
 When moving from Rails to Javascript, you begin integrating new libraries like jQuery (which make it possible to *write less, do more* with Javascript - sounds appealing, right?) to make your app more user friendly. It's the old stuff you learned in Ruby done in different ways that increase speed, structure and potential for scalability. 
 
-By integrating jQuery and serializers, I can render related data on the same page without needing to reload the page. By adding serializers to your Rails app, you can expose your model relationships to Javascript and make it possible to render in JSON format and 'paint' your DOM with your data. As aptly put by [a fellow Flatiron student:](https://brentbauman86.github.io/weaving_with_javascript) 
+By integrating jQuery and serializers, I can render related data on the same page without needing to reload the page. By adding serializers to your Rails app, you can expose your model relationships to Javascript and make it possible to render in JSON format and 'paint' your DOM with your data. As [a fellow Flatiron student:] stated: (https://brentbauman86.github.io/weaving_with_javascript) 
 
 > serializers act as the glue that binds your rails attributes for a specific object and allows you to access those attributes via js.
 > 
