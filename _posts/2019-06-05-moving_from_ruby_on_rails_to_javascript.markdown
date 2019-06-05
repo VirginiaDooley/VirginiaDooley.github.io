@@ -14,7 +14,7 @@ When I started Javascript six weeks ago, I couldn’t even begin to process how 
 
 ![](https://images.ecosia.org/2IzCt0rivf8T31qujTPbpA3_OdE=/0x390/smart/http%3A%2F%2Fwww.memecreator.org%2Fstatic%2Fimages%2Fmemes%2F4025305.jpg)
 
-It wasn't until I completed my JS Final Project that I finally understood the how and why I would continue to adopt new languages, libraries and frameworks into my coding arsenal. 
+It wasn't until I completed my Rails JS Final Project that I finally understood the how and why I would continue to adopt new languages, libraries and frameworks into my coding arsenal. 
 
 When moving from Rails to Javascript, you begin integrating new libraries like jQuery (which make it possible to *write less, do more* with Javascript - sounds appealing, right?) to make your app more user friendly. It's the old stuff you learned in Ruby done in different ways that increase speed, structure and potential for scalability. 
 
@@ -53,7 +53,7 @@ function showProgrammeClients(programme_id, clientArr){
 }
 ```
 
-I think if I had grasped the purpose of Javascript and fit with RoR years ago, my coding journey might have been slightly less bumpy. Feel free to comment on other compelling reasons to make the jump into Javascript and beyond! 
+I think if I had grasped the purpose of Javascript and fit with RoR years ago, my coding journey might have been slightly less bumpy. Next, I plan to implement ActiveAdmin and add more JS features to reduce the number of routes needed to access data. I also hope to use React.js to add visualisation - onward! Feel free to check it out on Github: https://github.com/VirginiaDooley/nova-new
 
 
 
