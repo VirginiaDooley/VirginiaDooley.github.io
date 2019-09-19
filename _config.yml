@@ -1,11 +1,11 @@
 # Site settings
 author: Virginia Dooley
-title: 
+title: Crafting with Code
 header-img: img/home-bg.png
 email: vcdooley@gmail.com
 copyright_name: Virginia Dooley
 description: > # this means to ignore newlines until "baseurl:"
-  
+  My learning journey as a Fullstack Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  VirginiaDooley
@@ -18,5 +18,3 @@ paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
-
-theme: jekyll-theme-leap-day
