@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Understanding the Software Development Life Cycle"
-date:       2019-11-19 13:58:43 +0000
+date:       2019-11-19 08:58:44 -0500
 permalink:  understanding_the_software_development_life_cycle
 ---
 
@@ -23,6 +23,4 @@ The main stages of the Software Development Life Cycle Management process includ
 * Deploy – The final deployment stage is where the software is released for customers to use and goes live.
 
 There are quite a few tools that can be used to structure and track this cycle, but essential features include project management, code development, and team collaboration. Big names include Trello, Jira and Asana but can also be as simple as large sheets of paper, a pack of sharpies and post its. 
-
-If you're a tech for good fan like me, check out this lecture about human centric software development tool: https://www.youtube.com/watch?v=Io-S3HOyhHY
 
