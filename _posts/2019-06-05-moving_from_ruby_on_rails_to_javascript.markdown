@@ -1,62 +1,28 @@
 ---
 layout: post
-title:      "Moving from Ruby on Rails to Javascript"
+title:      "Understanding the Software Development Life Cycle"
 date:       2019-06-05 11:46:02 -0400
 permalink:  moving_from_ruby_on_rails_to_javascript
 ---
 
 
-When I started Javascript six weeks ago, I couldn’t even begin to process how Javascript might fit into my Rails app. I was aware of basic features like alerts but was nervous about the the significant change in syntax and the sometimes too flexible nature of JS. Everyone seems to either rave or complain about Javascript but regardless, it's ubiquitous in modern web apps. 
+I've been coding for a few years now. With exception one off events or small contributions to open source projects, I've spent a majority of my time coding solo. In my next role, I'm looking forward to working with a team to create or improve products in a methodical way. To prepare for that experience, I took a closer look into the theories and tools involved in a software development life cycle, or SDLC. 
 
-> Everyone: You’re doing the same things in new ways. 
+One major difference in the methodologies I researched related to testing. I've recently been trying out Jest for node.js and refreshing my knowledge of Rspec for ruby with a view to create my next project and approach my next coding challenge through[ test driven development (TDD](https://code.tutsplus.com/tutorials/the-newbies-guide-to-test-driven-development--net-13835).
+> TDD is a programming technique that requires you to write actual code and automated test code simultaneously. This ensures that you test your code—and enables you to retest your code quickly and easily, since it's automated.
 
-> Me: But why do I need to do anything in a new way if my app is fully functional? 
+While there seems to be some debate on whether testing comes before or after building, most cycles look similar to this:
 
-![](https://images.ecosia.org/2IzCt0rivf8T31qujTPbpA3_OdE=/0x390/smart/http%3A%2F%2Fwww.memecreator.org%2Fstatic%2Fimages%2Fmemes%2F4025305.jpg)
+The main stages of the Software Development Life Cycle Management process includes the following steps:
 
-It wasn't until I completed my Rails JS Final Project that I finally understood the how and why I would continue to adopt new languages, libraries and frameworks into my coding arsenal. 
+* Identify Requirements – The first stage is about understanding the problems you are trying to solve, and what the software needs to do.
+* Plan & Design – Taking into account the requirements, the next step is to plan and prioritize the features that need to be created. This phase can and should include some research to validate technologies and approaches.
+* Build / Code – This stage is one of the longest, and where much of the work is done. It should overlap to some degree with the following Documentation and Test phase.
+* Test / Debug / Document – Documenting and testing should happen during the build stage as well, but this stage is where the focus turns from developing features to bug fixing and stabilizing the software for launch to customers.
+* Often Alpha and Beta versions are released in this phase to ensure configuration and other rare or hard to spot bugs are found and fixed.
+* Deploy – The final deployment stage is where the software is released for customers to use and goes live.
 
-When moving from Rails to Javascript, you begin integrating new libraries like jQuery (which make it possible to *write less, do more* with Javascript - sounds appealing, right?) to make your app more user friendly. It's the old stuff you learned in Ruby done in different ways that increase speed, structure and potential for scalability. 
+There are quite a few tools that can be used to structure and track this cycle, but essential features include project management, code development, and team collaboration. Big names include Trello, Jira and Asana but can also be as simple as large sheets of paper, a pack of sharpies and post its. 
 
-By integrating jQuery and serializers, I can render related data on the same page without needing to reload the page. By adding serializers to your Rails app, you can expose your model relationships to Javascript and make it possible to render in JSON format and 'paint' your DOM with your data. As a [fellow Flatiron student](https://brentbauman86.github.io/weaving_with_javascript) so aptly stated:  
-
-> serializers act as the glue that binds your rails attributes for a specific object and allows you to access those attributes via js.
-> 
-
-For example, pre-jQuery, users had to reload my Rails CRM app approximately 4 times to dig out the a list of Clients for a specific Programme. With jQuery, it can all be viewed on the same page by defining a click event, JSON data call and ID selector in which to render the Client names. 
-
-```
-$(() => {
-  console.log("programmes.js is loaded");
-  getProgrammeClients()
-});
-
-function getProgrammeClients(){
-  $("a.programme-link").on('click', function() {
-    let programme_id = $(this).data("id");
-    let programme_url = "/programmes/" + programme_id + "/clients" + ".json"
-
-    $.get(programme_url, (data) => {
-      data.forEach(obj => console.log(obj))
-      showProgrammeClients(programme_id, data)
-    });
-  });
-}
-
-function showProgrammeClients(programme_id, clientArr){
-  let text = "<ul>";
-  clientArr.forEach(obj => {
-    let link = `<a href="/clients/${obj.id}">`
-    text += "<li>" + link + obj.full_name + "</a>" + "</li>"
-  });
-  $('.programme-' + programme_id + '-clients').append(text)
-}
-```
-
-I think if I had grasped the purpose of Javascript and fit with RoR years ago, my coding journey might have been slightly less bumpy. Next, I plan to implement ActiveAdmin and add more JS features to reduce the number of routes needed to access data. I also hope to use React.js to add visualisation - onward! Feel free to check it out on Github: https://github.com/VirginiaDooley/nova-new
-
-
-
-
-
+If you're a tech for good fan like me, check out this lecture about human centric software development tool: https://www.youtube.com/watch?v=Io-S3HOyhHY
 
