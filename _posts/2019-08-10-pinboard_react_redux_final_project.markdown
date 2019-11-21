@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Pinboard: React/Redux Final Project "
-date:       2019-08-10 21:57:52 +0000
+date:       2019-08-10 17:57:53 -0400
 permalink:  pinboard_react_redux_final_project
 ---
 
@@ -15,11 +15,9 @@ React renders the most basic components first - those that don't require remote 
 After a user searches and chooses images, an event handler stores those chosen images in a local state. It’s not until the user saves a board of images that Redux comes into play. In this example below, the event handler “handleSave” passes the local state (using props) to the reducer to trigger an action updating the global state to be managed in the Redux store going forward. 
 
 #src/container/CreateBoard.js
-
 ```
 handleSave = (event) => {
     event.preventDefault();
-
     const board = {
       title: this.state.title,
         images_attributes: this.props.boardImages.map(image => {
@@ -120,4 +118,8 @@ case 'FETCH_BOARDS': {
 ```
 
 Next steps include adding the ability to update and delete boards and of course adding a user model. Check out this work in progress here: https://github.com/VirginiaDooley/pinboard
+
+Resources: 
+https://codeburst.io/how-to-build-a-good-api-using-rubyonrails-ef7eadfa3078
+https://medium.com/@rajaraodv/step-by-step-guide-to-building-react-redux-apps-using-mocks-48ca0f47f9a#.s7zsgq3u1
 
