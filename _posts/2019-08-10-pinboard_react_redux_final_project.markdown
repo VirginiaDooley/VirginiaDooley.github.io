@@ -60,7 +60,7 @@ case 'SAVE_BOARD': {
         boards: [...state.boards, action.payload],
         boardImages: []};
       }
-			```
+```
 
 In doing so, react/redux makes it possible to to fetch a list of boards from my server side rails api to render on the client side. I used a lifecycle method so that I would have access to a current list from the start of my app. 
 
