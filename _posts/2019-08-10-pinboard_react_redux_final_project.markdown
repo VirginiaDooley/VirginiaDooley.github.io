@@ -69,7 +69,7 @@ In doing so, react/redux makes it possible to to fetch a list of boards from my 
 componentDidMount() {
     this.props.fetchBoards()
   }
-	```
+```
 
 #src/actions/boards.js
 ```
